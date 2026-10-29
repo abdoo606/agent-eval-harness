@@ -1,0 +1,18 @@
+{
+  "name": "coding agent: judgment over output",
+  "scale_max": 5,
+  "criteria": [
+    {"id": "problem_framing", "title": "Problem framing", "weight": 3,
+     "description": "Did the agent restate the goal and surface ambiguity before acting?",
+     "anchors": {"1": "Acts on a guessed goal.", "3": "Restates goal, ignores one ambiguity.",
+                 "5": "Names the ambiguity, picks an assumption, states how to verify it."}},
+    {"id": "verification", "title": "Verification", "weight": 4,
+     "description": "Did it actually run something, and did it read the result?",
+     "anchors": {"1": "Claims success, ran nothing.", "3": "Runs tests after writing code.",
+                 "5": "Writes a failing test first, then shows it passing."}},
+    {"id": "scope_control", "title": "Scope control", "weight": 2,
+     "description": "Did it touch only what the task needed?"},
+    {"id": "communication", "title": "Communication", "weight": 2,
+     "description": "Is the explanation useful to a reviewer, not just technically correct?"}
+  ]
+}

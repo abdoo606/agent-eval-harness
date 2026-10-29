@@ -1,0 +1,6 @@
+{"evaluations": [
+  {"criterion": "problem_framing", "score": 4, "note": "restated goal, guessed at currency rounding"},
+  {"criterion": "verification", "score": 5, "note": "added failing test first"},
+  {"criterion": "scope_control", "score": 3, "note": "reformatted two unrelated files"},
+  {"criterion": "communication", "score": 4, "note": "clear summary, no overclaiming"}
+]}
